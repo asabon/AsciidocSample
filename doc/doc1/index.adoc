@@ -2,6 +2,6 @@
 
 == Purpose
 
-include::purpose.adoc
+include::purpose.adoc[]
 
 == State transition
