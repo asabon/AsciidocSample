@@ -1,0 +1,26 @@
+name: Generate ASCIIDOC document
+
+on:
+  push:
+    paths-ignore:
+      - 'build/**'
+
+jobs:
+  asciidoctor_job:
+    runs-on: ubuntu-latest
+    name: Build Asciidoctor
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build AsciiDoc step
+        id: documents
+        uses: Analog-inc/asciidoctor-action@master
+        with:
+          shellcommand: "asciidoctor doc/doc1/index.adoc"
+
+      - name: Save AsciiDoc step
+        uses: actions/upload-artifact@v1
+        with:
+          name: Output-document
+          path: build/doc1/doc1.html

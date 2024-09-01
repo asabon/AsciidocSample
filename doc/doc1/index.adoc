@@ -1,0 +1,5 @@
+= Sample document
+
+== Purpose
+
+== State transition
