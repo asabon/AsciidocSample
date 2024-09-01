@@ -4,4 +4,4 @@
 
 include::purpose.adoc[]
 
-== 本文(index.adoc)
+== 状態遷移(index.adoc)
