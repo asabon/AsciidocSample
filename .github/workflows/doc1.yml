@@ -1,0 +1,28 @@
+name: Generate doc1
+
+on:
+  push:
+    paths-ignore:
+      - 'build/**'
+
+jobs:
+  asciidoctor_job:
+    runs-on: ubuntu-latest
+    name: Build Asciidoctor
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Asciidoctor
+        run: sudo apt-get install -y asciidoctor asciidoctor-diagram
+
+      - name: Build AsciiDoc
+        run: |
+          mkdir -p build/doc1
+          asciidoctor -r asciidoctor-diagram -a allow-uri-read -o build/doc1/doc1.html doc/doc1/index.adoc
+
+      - name: Save AsciiDoc
+        uses: actions/upload-artifact@v4
+        with:
+          name: Output-document
+          path: build/doc1/
