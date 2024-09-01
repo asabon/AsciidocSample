@@ -13,8 +13,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Asciidoctor
-        run: sudo apt-get install -y asciidoctor asciidoctor-diagram
+      #- name: Setup Asciidoctor
+      #  run: sudo apt-get install -y asciidoctor asciidoctor-diagram
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+            ruby-version: '3.0'
+
+      - name: Install Asciidoctor and Asciidoctor diagram
+        run: |
+          gem install asciidoctor
+          gem install asciidoctor-diagram
 
       - name: Build AsciiDoc
         run: |
