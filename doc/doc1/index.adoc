@@ -1,7 +1,7 @@
-= Sample document
+= サンプルドキュメント(index.adoc)
 
-== Purpose
+== 本書の目的と想定読者(index.adoc)
 
 include::purpose.adoc[]
 
-== State transition
+== 本文(index.adoc)
