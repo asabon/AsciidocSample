@@ -5,3 +5,5 @@
 include::purpose.adoc[]
 
 == 状態遷移(index.adoc)
+
+include::statetransition.adoc[]
