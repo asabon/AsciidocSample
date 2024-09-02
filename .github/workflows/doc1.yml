@@ -26,6 +26,9 @@ jobs:
           gem install asciidoctor
           gem install asciidoctor-diagram
 
+      - name: Install Mermaid
+        run: npm install mermaid
+
       - name: Build AsciiDoc
         run: |
           mkdir -p build/doc1
