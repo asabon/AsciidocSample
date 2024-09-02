@@ -24,8 +24,14 @@ ASCIIDOC を使ったドキュメントの記述とビルドについてサン�
 
 #### 目的
 
+* ファイル分割の確認
+* Mermaid を使った図の表現
+  * GitHub の AsciiDoctor では描画できている
+  * GitHub Actions による生成ではうまくいってない(調査中)
+
 #### 成果物
 
-* https://asabon.github.io/AsciidocSample/build/doc1/doc1.html
+* main ブランチから GitHub Actions で生成したドキュメント
+  * https://asabon.github.io/AsciidocSample/build/doc1/doc1.html
 
 ---
