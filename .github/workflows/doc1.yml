@@ -34,7 +34,7 @@ jobs:
           mkdir -p build/doc1
           asciidoctor -r asciidoctor-diagram -a allow-uri-read -o build/doc1/doc1.html doc/doc1/index.adoc
 
-      - name: Save AsciiDoc
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: Output-document

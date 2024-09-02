@@ -8,6 +8,15 @@ include::purpose.adoc[]
 
 include::statetransition.adoc[]
 
+[mermaid]
+----
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+----
+
 [source,html]
 ----
 <script type="module">
