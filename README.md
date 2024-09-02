@@ -26,6 +26,6 @@ ASCIIDOC を使ったドキュメントの記述とビルドについてサン�
 
 #### 成果物
 
-* https://github.com/asabon/AsciidocSample/tree/main/build/doc1/doc1.html
+* https://asabon.github.io/AsciidocSample/tree/main/build/doc1/doc1.html
 
 ---
