@@ -17,3 +17,15 @@ ASCIIDOC を使ったドキュメントの記述とビルドについてサン�
 + doc/
   + doc1/      : doc1 ソース
 ```
+
+---
+
+### doc1
+
+#### 目的
+
+#### 成果物
+
+* https://github.com/asabon/AsciidocSample/tree/main/build/doc1/doc1.html
+
+---
