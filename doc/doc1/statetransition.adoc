@@ -10,12 +10,3 @@ stateDiagram-v2
     ACTIVE --> READY : Stop
     READY --> POWERDOWN : Shutdown
 ....
-
-[mermaid]
-----
-graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
-----
