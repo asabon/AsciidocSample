@@ -1,12 +1,18 @@
 === 状態遷移図(statetransition.adoc)
 
+table を使って状態定義を表現します。
+
+
+
 mermaid を使って状態遷移図を記述します。
 
 [source, mermaid]
 ....
 stateDiagram-v2
-    POWERDOWN --> READY : Initialize
+    [*] --> INIT
+    INIT --> READY : Initialize
     READY --> ACTIVE : Start
     ACTIVE --> READY : Stop
-    READY --> POWERDOWN : Shutdown
+    READY --> INIT : Finalize
 ....
+
