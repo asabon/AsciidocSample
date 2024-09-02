@@ -2,6 +2,8 @@ name: Generate doc1
 
 on:
   push:
+    branches:
+      - main
     paths-ignore:
       - 'build/**'
 
