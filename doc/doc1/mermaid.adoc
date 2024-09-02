@@ -1,10 +1,6 @@
-=== 状態遷移図(statetransition.adoc)
+== Mermaid を使ったサンプル (mermaid.adoc)
 
-table を使って状態定義を表現します。
-
-
-
-mermaid を使って状態遷移図を記述します。
+=== 状態遷移図
 
 [source, mermaid]
 ....
@@ -16,3 +12,11 @@ stateDiagram-v2
     READY --> INIT : Finalize
 ....
 
+=== フローチャート
+
+[source, mermaid]
+....
+flowchart LR
+    A --> B
+    B --
+....
