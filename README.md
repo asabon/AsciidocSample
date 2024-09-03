@@ -12,9 +12,9 @@ ASCIIDOC を使ったドキュメントの記述とビルドについてサン�
 + .github/
   + workflows/
     + doc1.yml : doc1 生成用の yml
-+ build/
-  + doc1/      : doc1 ビルド後 HTML 置き場(予定)
-+ doc/
++ docs/
+  + doc1/      : doc1 ビルド成果物
++ sources/
   + doc1/      : doc1 ソース
 ```
 
@@ -32,6 +32,6 @@ ASCIIDOC を使ったドキュメントの記述とビルドについてサン�
 #### 成果物
 
 * main ブランチから GitHub Actions で生成したドキュメント
-  * https://asabon.github.io/AsciidocSample/build/doc1/doc1.html
+  * https://asabon.github.io/AsciidocSample/docs/doc1/doc1.html
 
 ---
