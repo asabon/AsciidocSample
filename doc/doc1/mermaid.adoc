@@ -20,3 +20,14 @@ flowchart LR
     A --> B
     B --> C
 ....
+
+=== シーケンス図
+
+[source, mermaid]
+....
+sequence Diagram
+    actor User
+    participant System
+    User ->> +System: Initialize
+    System -->> -User: Result
+....
