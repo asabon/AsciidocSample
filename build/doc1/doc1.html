@@ -439,34 +439,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1>サンプルドキュメント(index.adoc)</h1>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_本書の目的と想定読者index_adoc">本書の目的と想定読者(index.adoc)</h2>
+<div id="preamble">
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_本書の目的purpose_adoc">本書の目的(purpose.adoc)</h3>
 <div class="paragraph">
-<p>あああ</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_想定読者purpose_adoc">想定読者(purpose.adoc)</h3>
-<div class="paragraph">
-<p>あああ</p>
-</div>
+<p>↓で章ごとに各ファイルを分割。</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_状態遷移index_adoc">状態遷移(index.adoc)</h2>
+<h2 id="_mermaid_を使ったサンプル_mermaid_adoc">Mermaid を使ったサンプル (mermaid.adoc)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_状態遷移図statetransition_adoc">状態遷移図(statetransition.adoc)</h3>
-<div class="paragraph">
-<p>table を使って状態定義を表現します。</p>
-</div>
-<div class="paragraph">
-<p>mermaid を使って状態遷移図を記述します。</p>
-</div>
+<h3 id="_状態遷移図">状態遷移図</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-mermaid" data-lang="mermaid">stateDiagram-v2
@@ -478,12 +462,64 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_フローチャート">フローチャート</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-mermaid" data-lang="mermaid">flowchart LR
+    A --&gt; B
+    B --&gt; C</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_テーブル表現_table_adoc">テーブル表現 (table.adoc)</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Table title</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">-</th>
+<th class="tableblock halign-left valign-top">A</th>
+<th class="tableblock halign-left valign-top">B</th>
+<th class="tableblock halign-left valign-top">C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C2</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-09-02 23:33:55 UTC
+Last updated 2024-09-03 00:05:12 UTC
 </div>
 </div>
 </body>
