@@ -1,9 +1,7 @@
 = サンプルドキュメント(index.adoc)
 
-== 本書の目的と想定読者(index.adoc)
+↓で章ごとに各ファイルを分割。
 
-include::purpose.adoc[]
+include::mermaid.adoc[]
 
-== 状態遷移(index.adoc)
-
-include::statetransition.adoc[]
+include::table.adoc[]
