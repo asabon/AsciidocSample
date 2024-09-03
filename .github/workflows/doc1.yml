@@ -5,13 +5,13 @@ on:
     branches:
       - main
     paths-ignore:
-      - 'build/**'
+      - 'docs/**'
 
   pull_request:
     branches:
       - main
     paths-ignore:
-      - 'build/**'
+      - 'docs/**'
   
 jobs:
   asciidoctor_job:
@@ -35,12 +35,12 @@ jobs:
         run: npm install mermaid
 
       - name: Delete old documents
-        run: rm -rf build/doc1
+        run: rm -rf docs/doc1
 
       - name: Build AsciiDoc
         run: |
-          mkdir -p build/doc1
-          asciidoctor -r asciidoctor-diagram -a allow-uri-read -o build/doc1/doc1.html doc/doc1/index.adoc
+          mkdir -p docs/doc1
+          asciidoctor -r asciidoctor-diagram -a allow-uri-read -o docs/doc1/doc1.html sources/doc1/index.adoc
 
       - name: Set up Git
         run: |
@@ -60,4 +60,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Output-document
-          path: build/doc1/
+          path: docs/doc1/
