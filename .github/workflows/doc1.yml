@@ -4,14 +4,14 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - 'docs/**'
+    paths:
+      - 'docs/doc1/source/**'
 
   pull_request:
     branches:
       - main
     paths-ignore:
-      - 'docs/**'
+      - 'docs/doc1/source/**'
   
 jobs:
   asciidoctor_job:
@@ -40,7 +40,7 @@ jobs:
       - name: Build AsciiDoc
         run: |
           mkdir -p docs/doc1
-          asciidoctor -r asciidoctor-diagram -a allow-uri-read -o docs/doc1/doc1.html sources/doc1/index.adoc
+          asciidoctor -r asciidoctor-diagram -a allow-uri-read -o docs/doc1/build/index.html docs/doc1/source/index.adoc
 
       - name: Set up Git
         run: |

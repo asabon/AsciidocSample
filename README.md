@@ -20,7 +20,7 @@ ASCIIDOC を使ったドキュメントの記述とビルドについてサン�
 
 ---
 
-### doc1
+### doc1 (ASCIIDOC)
 
 #### 目的
 
@@ -32,6 +32,6 @@ ASCIIDOC を使ったドキュメントの記述とビルドについてサン�
 #### 成果物
 
 * main ブランチから GitHub Actions で生成したドキュメント
-  * https://asabon.github.io/AsciidocSample/docs/doc1/doc1.html
+  * https://asabon.github.io/DocumentSamples/docs/doc1/doc1.html
 
 ---
