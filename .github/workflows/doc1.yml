@@ -35,11 +35,11 @@ jobs:
         run: npm install mermaid
 
       - name: Delete old documents
-        run: rm -rf docs/doc1
+        run: rm -rf docs/doc1/build
 
       - name: Build AsciiDoc
         run: |
-          mkdir -p docs/doc1
+          mkdir -p docs/doc1/build
           asciidoctor -r asciidoctor-diagram -a allow-uri-read -o docs/doc1/build/index.html docs/doc1/source/index.adoc
 
       - name: Set up Git
