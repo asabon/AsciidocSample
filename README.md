@@ -1,8 +1,8 @@
-# AsciidocSample
+# DocumentSamples
 
 ## 目的
 
-ASCIIDOC を使ったドキュメントの記述とビルドについてサンプルを示す。
+いろんなツールを使ったドキュメントの記述とビルドについてサンプルを示す。
 
 ## 構成
 
@@ -12,15 +12,22 @@ ASCIIDOC を使ったドキュメントの記述とビルドについてサン�
 + .github/
   + workflows/
     + doc1.yml : doc1 生成用の yml
+    + ...
 + docs/
   + doc1/      : doc1 ビルド成果物
+  + ...
 + sources/
   + doc1/      : doc1 ソース
+  + ...
 ```
 
 ---
 
-### doc1 (ASCIIDOC)
+### doc1
+
+#### ツール
+
+* AsciiDoc
 
 #### 目的
 
