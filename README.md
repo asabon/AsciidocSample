@@ -32,6 +32,6 @@ ASCIIDOC を使ったドキュメントの記述とビルドについてサン�
 #### 成果物
 
 * main ブランチから GitHub Actions で生成したドキュメント
-  * https://asabon.github.io/DocumentSamples/docs/doc1/doc1.html
+  * https://asabon.github.io/DocumentSamples/docs/doc1/build/index.html
 
 ---
