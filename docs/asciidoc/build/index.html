@@ -437,57 +437,66 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <body class="article">
 <div id="header">
 <h1>サンプルドキュメント(index.adoc)</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_mermaid_を使ったサンプル_mermaid_adoc">1. Mermaid を使ったサンプル (mermaid.adoc)</a>
+<ul class="sectlevel2">
+<li><a href="#_状態遷移図">1.1. 状態遷移図</a></li>
+<li><a href="#_フローチャート">1.2. フローチャート</a></li>
+<li><a href="#_シーケンス図">1.3. シーケンス図</a></li>
+</ul>
+</li>
+<li><a href="#_テーブル表現_table_adoc">2. テーブル表現 (table.adoc)</a></li>
+</ul>
+</div>
 </div>
 <div id="content">
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>↓で章ごとに各ファイルを分割。</p>
-</div>
-</div>
-</div>
 <div class="sect1">
-<h2 id="_mermaid_を使ったサンプル_mermaid_adoc">Mermaid を使ったサンプル (mermaid.adoc)</h2>
+<h2 id="_mermaid_を使ったサンプル_mermaid_adoc">1. Mermaid を使ったサンプル (mermaid.adoc)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_状態遷移図">状態遷移図</h3>
+<h3 id="_状態遷移図">1.1. 状態遷移図</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-mermaid" data-lang="mermaid">stateDiagram-v2
+<pre>Failed to generate image: Could not find the 'mmdc' executable in PATH; add it to the PATH or specify its location using the 'mmdc' document attribute
+stateDiagram-v2
     [*] --&gt; INIT
     INIT --&gt; READY : Initialize
     READY --&gt; ACTIVE : Start
     ACTIVE --&gt; READY : Stop
-    READY --&gt; INIT : Finalize</code></pre>
+    READY --&gt; INIT : Finalize</pre>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_フローチャート">フローチャート</h3>
+<h3 id="_フローチャート">1.2. フローチャート</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-mermaid" data-lang="mermaid">flowchart LR
+<pre>Failed to generate image: Could not find the 'mmdc' executable in PATH; add it to the PATH or specify its location using the 'mmdc' document attribute
+flowchart LR
     A --&gt; B
-    B --&gt; C</code></pre>
+    B --&gt; C</pre>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_シーケンス図">シーケンス図</h3>
+<h3 id="_シーケンス図">1.3. シーケンス図</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+<pre>Failed to generate image: Could not find the 'mmdc' executable in PATH; add it to the PATH or specify its location using the 'mmdc' document attribute
+sequenceDiagram
     actor User
     participant System
     User -&gt;&gt; +System: Initialize
-    System --&gt;&gt; -User: Result</code></pre>
+    System --&gt;&gt; -User: Result</pre>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_テーブル表現_table_adoc">テーブル表現 (table.adoc)</h2>
+<h2 id="_テーブル表現_table_adoc">2. テーブル表現 (table.adoc)</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 1. Table title</caption>
@@ -531,7 +540,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-09-08 22:39:55 UTC
+Last updated 2024-09-12 22:30:07 UTC
 </div>
 </div>
 </body>
