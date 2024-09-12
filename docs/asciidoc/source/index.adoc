@@ -1,7 +1,9 @@
+:toc:
+:sectnums:
+:toclevels: 5
+
 = サンプルドキュメント(index.adoc)
 
-↓で章ごとに各ファイルを分割。
+include::mermaid.adoc[10, -1]
 
-include::mermaid.adoc[]
-
-include::table.adoc[]
+include::table.adoc[10, -1]
