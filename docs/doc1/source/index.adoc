@@ -1,7 +1,0 @@
-= サンプルドキュメント(index.adoc)
-
-↓で章ごとに各ファイルを分割。
-
-include::mermaid.adoc[]
-
-include::table.adoc[]

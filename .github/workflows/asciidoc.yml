@@ -1,17 +1,17 @@
-name: Generate doc1
+name: Generate asciidoc document
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'docs/doc1/source/**'
+      - 'docs/asciidoc/source/**'
 
   pull_request:
     branches:
       - main
     paths-ignore:
-      - 'docs/doc1/source/**'
+      - 'docs/asciidoc/source/**'
   
 jobs:
   asciidoctor_job:
@@ -35,12 +35,12 @@ jobs:
         run: npm install mermaid
 
       - name: Delete old documents
-        run: rm -rf docs/doc1/build
+        run: rm -rf docs/asciidoc/build
 
       - name: Build AsciiDoc
         run: |
-          mkdir -p docs/doc1/build
-          asciidoctor -r asciidoctor-diagram -a allow-uri-read -o docs/doc1/build/index.html docs/doc1/source/index.adoc
+          mkdir -p docs/asciidoc/build
+          asciidoctor -r asciidoctor-diagram -a allow-uri-read -o docs/asciidoc/build/index.html docs/asciidoc/source/index.adoc
 
       - name: Set up Git
         run: |
@@ -60,4 +60,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Output-document
-          path: docs/doc1/
+          path: docs/asciidoc/

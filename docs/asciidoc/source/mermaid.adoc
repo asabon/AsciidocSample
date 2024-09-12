@@ -1,8 +1,18 @@
+:toc:
+:sectnums:
+:toclevels: 5
+
+
+
+
+
+// include.adoc でこのファイルの 10 行目から include している
 == Mermaid を使ったサンプル (mermaid.adoc)
 
 === 状態遷移図
 
-[source, mermaid]
+[mermaid]
+ifdef::env-github[[source, mermaid]]
 ....
 stateDiagram-v2
     [*] --> INIT
@@ -14,7 +24,8 @@ stateDiagram-v2
 
 === フローチャート
 
-[source, mermaid]
+[mermaid]
+ifdef::env-github[[source, mermaid]]
 ....
 flowchart LR
     A --> B
@@ -23,7 +34,8 @@ flowchart LR
 
 === シーケンス図
 
-[source, mermaid]
+[mermaid]
+ifdef::env-github[[source, mermaid]]
 ....
 sequenceDiagram
     actor User
